@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div id="app" class=" bg-gray-300 w-[60%] mx-auto mt-30">
+       <div class="add_todos w-[95%] mx-auto pt-5 text-center gap-5 flex justify-evenly">
+         <input id="add_todo" class="border border-black w-full bg-white outline-none p-1 rounded" type="text" placeholder="Enter Todo"/>
+         <button type="submit" class="cursor-pointer bg-green-600 px-10 py-1 rounded">Add</button>
+       </div>
+
+       <div id="todos_container" class="pb-5 flex flex-col gap-3   m-5 w-[95%] mx-auto">
+          <!-- <div class="todos flex justify-between item-center text-center rounded  bg-green-300 px-10 py-2">
+            <input type="checkbox" class="size-6 cursor-pointer" />
+            <p>this is first todo</p>
+            <p class="bg-red-300 rounded-[100%] size-7 cursor-pointer hover:bg-red-200">x</p>
+          </div> -->
+       </div>
+
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
